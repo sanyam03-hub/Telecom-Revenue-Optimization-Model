@@ -31,6 +31,9 @@ This project demonstrates how to strengthen existing revenue streams and open ne
 │   ├── models.py              # Model implementations
 │   ├── evaluation.py          # Model evaluation metrics
 │   └── visualization.py       # Plotting utilities
+├── tests/                 # Unit tests
+│   ├── test_data_generation.py
+│   └── test_models.py
 ├── dashboard/
 │   ├── app.py                 # Streamlit dashboard application
 │   ├── components/            # Dashboard components
@@ -39,6 +42,8 @@ This project demonstrates how to strengthen existing revenue streams and open ne
 │   ├── business_report.pdf    # 6-8 page business report
 │   └── images/                # Charts and visualizations for report
 ├── requirements.txt           # Python dependencies
+├── Dockerfile                 # Docker container configuration
+├── DEPLOYMENT.md              # Deployment guide
 └── README.md                 # This file
 ```
 
@@ -68,12 +73,20 @@ This project demonstrates how to strengthen existing revenue streams and open ne
 - **Campaign ROI optimization**
 - **Customer lifetime value enhancement**
 
+### 5. Engineering & SQL Excellence
+- **Production-Ready**: Dockerized application for consistent deployment
+- **SQL Analysis**: Advanced SQL querying including Window Functions and CTEs
+- **CI/CD**: Automated testing pipeline using GitHub Actions
+- **Testing**: Comprehensive unit test suite for data stability
+
 ## Tech Stack
 - **Python**: pandas, scikit-learn, XGBoost, LightGBM, Prophet
+- **Database**: SQLite, SQL (Complex Queries, Window Functions)
 - **Visualization**: matplotlib, seaborn, Plotly
 - **Dashboard**: Streamlit
 - **Explainability**: SHAP
 - **Statistical Modeling**: statsmodels
+- **DevOps**: Docker, GitHub Actions (CI/CD)
 
 ## Installation & Setup
 
@@ -134,42 +147,12 @@ Our synthetic dataset includes:
 3. **Data-Driven Insights**: Actionable recommendations backed by statistical significance
 4. **Privacy-Compliant**: GDPR-aligned synthetic data and anonymization techniques
 
-## Resume Bullet Points
-
-### Technical Implementation
-- **Built end-to-end machine learning pipeline** for telecom churn prediction using LightGBM/XGBoost with 84.7% AUC score, enabling identification of 2,000 high-risk customers from 10,000 customer base
-- **Developed privacy-first analytics solution** using synthetic data generation and hashed customer identifiers, demonstrating GDPR-compliant analytics aligned with Dentsu's identity solutions strategy
-- **Created interactive Streamlit dashboard** with real-time customer segmentation, revenue analytics, and campaign optimization features, improving business decision-making efficiency by 40%
-- **Implemented advanced feature engineering** including RFM scoring, usage efficiency metrics, and risk indicators, resulting in 15+ predictive features for customer behavior analysis
-
-### Business Impact & Analytics
-- **Projected $4.7M annual revenue savings** through 7% churn reduction and 5% ARPU increase via predictive analytics and targeted customer interventions
-- **Optimized marketing campaign effectiveness** by 15% ROI improvement using uplift modeling and customer segmentation, targeting 2,500+ campaign-responsive customers
-- **Identified $563K monthly revenue at risk** from customer churn and developed actionable customer retention strategies for high-value segments
-- **Delivered comprehensive business intelligence solution** with 6-page executive report, interactive dashboards, and predictive models ready for production deployment
-
-### Data Science & Technology Stack
-- **Designed and generated realistic synthetic dataset** of 10,000 telecom customers with 30+ features including demographics, usage patterns, and campaign data using Python
-- **Applied advanced statistical modeling** including time-series forecasting (Prophet), gradient boosting (LightGBM/XGBoost), and causal inference for uplift modeling
-- **Implemented model explainability framework** using SHAP values for transparent AI decision-making and regulatory compliance in financial services context
-- **Built production-ready MLOps pipeline** with automated model training, evaluation, and deployment capabilities using scikit-learn, pandas, and Plotly for visualization
-
-### Industry-Specific Expertise
-- **Demonstrated telecom domain knowledge** through accurate modeling of customer lifecycle, ARPU optimization, usage patterns, and churn behavior aligned with industry benchmarks
-- **Created customer segmentation strategy** identifying 7 distinct value-based segments (Champions, Loyal Customers, At Risk, etc.) with specific retention and growth recommendations
-- **Developed privacy-compliant analytics architecture** suitable for regulated industries, showcasing understanding of data governance and customer privacy requirements
-- **Aligned solution with Dentsu's strategic focus** on algorithmic media, identity solutions, and data-driven marketing optimization for telecommunications sector
 
 ## Future Enhancements
 - Real-time model deployment with MLOps pipeline
 - A/B testing framework integration
 - Advanced NLP for customer sentiment analysis
 - Deep learning models for sequential pattern recognition
-
-## Contact
-**Sanyam Jain**  
-Data Scientist & ML Engineer  
-[Your Contact Information]
 
 ---
 
